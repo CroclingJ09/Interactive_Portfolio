@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Title</title>
+</head>
+<body>
+    <div id="warning-width"></div>
+    <div id="UI">
+        <div id="fullscreen">fullscreen</div>
+        <div id="hint"></div>
+        <div id="zoom-plus" class="zoom">+</div>
+        <div id="zoom-minus" class="zoom">-</div>
+        <div id="control-block">
+            <div id="up"></div>
+            <div id="down"></div>
+            <div id="right"></div>
+            <div id="left"></div>
+        </div>
+    </div>
+    <section id="text-layer">
+        <img id="text-img" src="" alt="">
+        <img src="" alt="perso" id="character">
+        <artcle id="text-block">
+            <p id="text"></p>
+            <button id="next-btn">Next</button>
+            <div id="option-block">
+                <button id="option-1" class="option">Option 1</button>
+                <button id="option-2" class="option">Option 2</button>
+            </div>
+        </artcle>
+    </section>
+    <section id="portfolio-layer">
+        <div id="portfolio-back"></div>
+        <article id="portfolio-block">
+            <div id="arrow-back" class="arrow"></div>
+            <img src="" alt="projet 1" class="projects">
+            <div id="arrow-next" class="arrow"></div>
+        </article>
+        <article id="portfolio-desc"></article>
+    </section>
+    <div id="container-block">
+        <div id="container">
+            <div id="floor"></div>
+            <div id="wall-left"></div>
+            <div id="wall-right"></div>
+            <div id="desk" class="selectable"></div>
+            <div id="computer" class="selectable"></div>
+            <div id="bookshelf" class="selectable"></div>
+            <div id="poster-1" class="selectable"></div>
+            <div id="poster-2" class="selectable"></div>
+<!--            <a href="" id="bed"><img src="ressources/img/bed.png" alt=""></a>-->
+        </div>
+    </div>
+<!--    <script type="module" src="js/general.js"></script>-->
+    <script src="js/uiControls.js"></script>
+    <script src="js/desk.js"></script>
+    <script src="js/posters.js"></script>
+</body>
+</html>
