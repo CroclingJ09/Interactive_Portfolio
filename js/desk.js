@@ -26,7 +26,7 @@ let textIndex = 0
 
 function deskSelect(){
     console.log("yes")
-    nextTextBtn.addEventListener("click", nextText)
+    nextTextBtn.addEventListener("click", nextTextProjects)
     console.log(textIndex)
     textLayer.style.display = "flex"
     textIndex = "Port0"
@@ -37,7 +37,7 @@ function deskSelect(){
     }
 }
 
-function nextText(){
+function nextTextProjects(){
     console.log("haha")
     switch (textIndex){
         case "Port1":

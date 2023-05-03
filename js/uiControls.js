@@ -4,7 +4,7 @@ let container = document.getElementById("container")
 
 console.log(container)
 
-let fullScreenBtn = document.getElementById("fullscreen")
+// let fullScreenBtn = document.getElementById("fullscreen")
 
 let upArrow = document.getElementById("up")
 
@@ -18,7 +18,7 @@ let zoomIn = document.getElementById("zoom-plus")
 
 let zoomOut = document.getElementById("zoom-minus")
 
-fullScreenBtn.addEventListener("click", fullScreen)
+// fullScreenBtn.addEventListener("click", fullScreen)
 
 upArrow.addEventListener("mousedown",moveUp)
 
@@ -36,18 +36,17 @@ let positionX = 0
 
 let positionY = 0
 
-let id = ""
-
-function fullScreen(){
-    if(!document.fullscreenElement){
-        document.requestFullscreen()
-    }
-    else{
-        document.exitFullscreen()
-    }
-}
+// function fullScreen(){
+//     if(!document.fullscreenElement){
+//         document.requestFullscreen()
+//     }
+//     else{
+//         document.exitFullscreen()
+//     }
+// }
 
 function moveUp() {
+    console.log(positionY)
     if (container.style.top !== "30em"){
         positionY += 10
         container.style.top = positionY + "em"
@@ -56,6 +55,7 @@ function moveUp() {
 }
 
 function moveDown() {
+    console.log(positionY)
     if (container.style.top !== "-30em"){
         positionY -= 10
         container.style.top = positionY + "em"
@@ -63,20 +63,21 @@ function moveDown() {
 }
 
 function moveLeft() {
-    if (container.style.left !== "30em"){
+    if (container.style.translate !== "30em"){
         positionX += 10
-        container.style.left = positionX + "em"
+        container.style.translate = positionX + "em"
     }
 }
 
 function moveRight() {
-    if (container.style.left !== "-30em"){
+    if (container.style.translate !== "-30em"){
         positionX -= 10
-        container.style.left = positionX + "em"
+        container.style.translate = positionX + "em"
     }
 }
 
 container.style.scale = "1.5"
+// container.style.translate = "30em"
 
 function moveIn(){
     console.log(container.style.scale)

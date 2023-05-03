@@ -22,14 +22,28 @@
     <section id="text-layer">
         <img id="text-img" src="" alt="">
         <img src="" alt="perso" id="character">
-        <artcle id="text-block">
+        <article id="text-block">
             <p id="text"></p>
             <button id="next-btn">Next</button>
             <div id="option-block">
                 <button id="option-1" class="option">Option 1</button>
                 <button id="option-2" class="option">Option 2</button>
             </div>
-        </artcle>
+        </article>
+    </section>
+    <section id="form-layer">
+        <div id="form-back"></div>
+        <form action="" id="form">
+            <input type="text" id="name" placeholder="Nom">
+            <input type="text" id="first-name" placeholder="Prénom">
+            <input type="email" id="input-email" placeholder="Adresse mail">
+            <input type="text" id="input-adress" placeholder="Adresse">
+            <input type="number" id="input-NPA" placeholder="NPA">
+            <input type="text" id="input-town" placeholder="Ville">
+            <input type="text" id="input-phone" placeholder="Numéro de téléphone (+41)" value="+41">
+            <textarea name="" id="input-message" cols="30" rows="10" placeholder="Message"></textarea>
+            <input type="submit" id="input-submit" value="Envoyer">
+        </form>
     </section>
     <section id="portfolio-layer">
         <div id="portfolio-back"></div>
@@ -48,8 +62,10 @@
             <div id="desk" class="selectable"></div>
             <div id="computer" class="selectable"></div>
             <div id="bookshelf" class="selectable"></div>
+            <div id="bed" class="selectable"></div>
             <div id="poster-1" class="selectable"></div>
             <div id="poster-2" class="selectable"></div>
+            <div id="switch" class="selectable"></div>
 <!--            <a href="" id="bed"><img src="ressources/img/bed.png" alt=""></a>-->
         </div>
     </div>
@@ -57,5 +73,6 @@
     <script src="js/uiControls.js"></script>
     <script src="js/desk.js"></script>
     <script src="js/posters.js"></script>
+    <script src="js/bed.js"></script>
 </body>
 </html>
