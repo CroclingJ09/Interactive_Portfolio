@@ -18,6 +18,7 @@ function nextTextBed(){
     switch (textIndex){
         case "Bed1":
             text.textContent = "Dessus, il y a une peluche d’un ours avec un côté blanc mignon, et un côté noir plus agressif."
+            textImg.style.display = "block"
             textIndex = "Bed2"
             break
         case "Bed2":
@@ -26,6 +27,7 @@ function nextTextBed(){
             break
         case "Bed3":
             textLayer.style.display = "none"
+            textImg.style.display = "none"
             textIndex = 0
             break
     }

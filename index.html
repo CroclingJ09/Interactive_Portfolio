@@ -8,16 +8,16 @@
 <body>
     <div id="warning-width"></div>
     <div id="UI">
-        <div id="fullscreen">fullscreen</div>
+<!--        <div id="fullscreen">fullscreen</div>-->
         <div id="hint"></div>
-        <div id="zoom-plus" class="zoom">+</div>
-        <div id="zoom-minus" class="zoom">-</div>
-        <div id="control-block">
-            <div id="up"></div>
-            <div id="down"></div>
+        <div id="zoom-plus" class="zoom"></div>
+        <div id="zoom-minus" class="zoom"></div>
+<!--        <div id="control-block">-->
+<!--            <div id="up"></div>-->
+<!--            <div id="down"></div>-->
             <div id="right"></div>
             <div id="left"></div>
-        </div>
+<!--        </div>-->
     </div>
     <section id="text-layer">
         <img id="text-img" src="" alt="">
@@ -34,6 +34,7 @@
     <section id="form-layer">
         <div id="form-back"></div>
         <form action="" id="form">
+            <h2>Me contacter</h2>
             <input type="text" id="name" placeholder="Nom">
             <input type="text" id="first-name" placeholder="Prénom">
             <input type="email" id="input-email" placeholder="Adresse mail">
@@ -59,14 +60,14 @@
             <div id="floor"></div>
             <div id="wall-left"></div>
             <div id="wall-right"></div>
+            <div id="me" class="selectable"></div>
             <div id="desk" class="selectable"></div>
             <div id="computer" class="selectable"></div>
             <div id="bookshelf" class="selectable"></div>
             <div id="bed" class="selectable"></div>
-            <div id="poster-1" class="selectable"></div>
+            <div id="poster-1" class="selectable"><img src="ressources/img/Poster-1.png" alt=""></div>
             <div id="poster-2" class="selectable"></div>
             <div id="switch" class="selectable"></div>
-<!--            <a href="" id="bed"><img src="ressources/img/bed.png" alt=""></a>-->
         </div>
     </div>
 <!--    <script type="module" src="js/general.js"></script>-->
@@ -74,5 +75,7 @@
     <script src="js/desk.js"></script>
     <script src="js/posters.js"></script>
     <script src="js/bed.js"></script>
+    <script src="js/computer.js"></script>
+    <script src="js/bookshelf.js"></script>
 </body>
 </html>

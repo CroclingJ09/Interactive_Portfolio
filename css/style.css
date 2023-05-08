@@ -22,6 +22,7 @@ body{
     position: absolute;
     z-index: 5;
     pointer-events: none;
+    backdrop-filter: brightness(80%);
 }
 
 #UI *{
@@ -40,16 +41,18 @@ body{
 #hint{
     width: 100px;
     height: 100px;
-    background-color: chartreuse;
+    /*background-color: chartreuse;*/
     position: absolute;
+    background-image: url("../ressources/img/hint.png");
     top: 0;
     right: 0;
 }
 
 .zoom{
-    width: 75px;
-    height: 75px;
-    background-color: orange;
+    width: 100px;
+    height: 100px;
+    /*background-color: orange;*/
+    background-size: cover;
     position: absolute;
     right: 50px;
 }
@@ -60,45 +63,50 @@ body{
 
 #zoom-plus{
     bottom: 20%;
+    background-image: url("../ressources/img/zoom-plus.png");
 }
 
 #zoom-minus{
     bottom: 5%;
+    background-image: url("../ressources/img/zoom-minus.png");
 }
 
-#control-block{
-    width: 250px;
-    height: 250px;
-    /*background-color: chartreuse;*/
+/*#control-block{*/
+/*    width: 250px;*/
+/*    height: 250px;*/
+/*    !*background-color: chartreuse;*!*/
+/*    position: absolute;*/
+/*    bottom: 5%;*/
+/*    left: 5%;*/
+/*}*/
+
+#left, #right{
+    width: 100px;
+    height: 100px;
+    /*background-color: orange;*/
     position: absolute;
-    bottom: 5%;
-    left: 5%;
+    top: 40%;
+    margin-inline: 20px;
+    background-size: cover;
 }
 
-#control-block div{
-    width: 80px;
-    height: 80px;
-    background-color: orange;
-    position: absolute;
-}
+/*#up{*/
+/*    left: 85px;*/
+/*}*/
 
-#up{
-    left: 85px;
-}
-
-#down{
-    bottom: 0;
-    left: 85px;
-}
+/*#down{*/
+/*    bottom: 0;*/
+/*    left: 85px;*/
+/*}*/
 
 #right{
-    top: 85px;
     right: 0;
+    background-image: url("../ressources/img/right.png");
 }
 
 #left{
-    top: 85px;
     left: 0;
+    background-image: url("../ressources/img/left.png");
 }
 
 #text-layer{
@@ -204,7 +212,17 @@ body{
     background-color: aquamarine;
     display: flex;
     flex-direction: column;
+    gap: 1em;
     justify-content: center;
+}
+
+#form h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#form input{
+
 }
 
 #form-back{
@@ -320,6 +338,7 @@ body{
 #wall-right{
     width: 1250px;
     height: 300px;
+    background-image: url("../ressources/img/wall-right.png");
     position: absolute;
     top: 300px;
     margin-left: auto;
@@ -329,26 +348,40 @@ body{
 }
 
 .selectable:hover{
-    border: solid black 5px;
+    /*border: solid black 5px;*/
+}
+
+#me{
+    width: 100px;
+    height: 200px;
+    background-color: burlywood;
+    position: absolute;
+    top: 300px;
+    transform: translateZ(500px) translateX(-150px) translateY(110px);
 }
 
 #desk{
     width: 300px;
-    height: 100px;
-    background-color: blueviolet;
+    height: 130px;
+    /*background-color: blueviolet;*/
+    background-image: url("../ressources/img/desk.png");
+    background-size: cover;
+    background-position: center;
     position: absolute;
     top: 300px;
-    transform: translateZ(-520px) translateX(90px) translateY(180px);
+    transform: translateZ(-100px) translateX(120px) translateY(160px);
     /*animation: desk-select ease 1s;*/
 }
 
 #computer{
-    width: 100px;
-    height: 100px;
-    background-color: coral;
+    width: 120px;
+    height: 120px;
+    /*background-color: coral;*/
+    background-image: url("../ressources/img/Computer.png");
+    background-size: cover;
     position: absolute;
     top: 300px;
-    transform: translateZ(-520px) translateX(90px) translateY(100px);
+    transform: translateZ(-20px) translateX(100px) translateY(90px);
 }
 
 #bookshelf{
@@ -372,7 +405,7 @@ body{
 #poster-1{
     width: 100px;
     height: 125px;
-    background-color: blueviolet;
+    /*background-color: blueviolet;*/
     position: absolute;
     top: 300px;
     transform: translateZ(-520px) translateX(-90px) translateY(40px);

@@ -6,9 +6,9 @@ console.log(container)
 
 // let fullScreenBtn = document.getElementById("fullscreen")
 
-let upArrow = document.getElementById("up")
-
-let downArrow = document.getElementById("down")
+// let upArrow = document.getElementById("up")
+//
+// let downArrow = document.getElementById("down")
 
 let leftArrow = document.getElementById("left")
 
@@ -20,9 +20,9 @@ let zoomOut = document.getElementById("zoom-minus")
 
 // fullScreenBtn.addEventListener("click", fullScreen)
 
-upArrow.addEventListener("mousedown",moveUp)
-
-downArrow.addEventListener("mousedown", moveDown)
+// upArrow.addEventListener("mousedown",moveUp)
+//
+// downArrow.addEventListener("mousedown", moveDown)
 
 leftArrow.addEventListener("mousedown", moveLeft)
 
@@ -45,22 +45,22 @@ let positionY = 0
 //     }
 // }
 
-function moveUp() {
-    console.log(positionY)
-    if (container.style.top !== "30em"){
-        positionY += 10
-        container.style.top = positionY + "em"
-    }
-    // id = setInterval(moveUp, 100)
-}
-
-function moveDown() {
-    console.log(positionY)
-    if (container.style.top !== "-30em"){
-        positionY -= 10
-        container.style.top = positionY + "em"
-    }
-}
+// function moveUp() {
+//     console.log(positionY)
+//     if (container.style.top !== "30em"){
+//         positionY += 10
+//         container.style.top = positionY + "em"
+//     }
+//     // id = setInterval(moveUp, 100)
+// }
+//
+// function moveDown() {
+//     console.log(positionY)
+//     if (container.style.top !== "-30em"){
+//         positionY -= 10
+//         container.style.top = positionY + "em"
+//     }
+// }
 
 function moveLeft() {
     if (container.style.translate !== "30em"){
@@ -82,17 +82,17 @@ container.style.scale = "1.5"
 function moveIn(){
     console.log(container.style.scale)
     switch (container.style.scale){
-        case "1":
-            container.style.scale = "1.25"
-            break
-        case "1.25":
-            container.style.scale = "1.5"
-            break
+        // case "1":
+        //     container.style.scale = "1.25"
+        //     break
+        // case "1.25":
+        //     container.style.scale = "1.5"
+        //     break
         case "1.5":
-            container.style.scale = "1.75"
-            break
-        case "1.75":
             container.style.scale = "2"
+            break
+        case "2":
+            container.style.scale = "2.5"
             break
     }
 }
@@ -100,17 +100,17 @@ function moveIn(){
 function moveOut(){
     console.log(container.style.scale)
     switch (container.style.scale){
-        case "2":
-            container.style.scale = "1.75"
+        case "2.5":
+            container.style.scale = "2"
             break
-        case "1.75":
+        case "2":
             container.style.scale = "1.5"
             break
-        case "1.5":
-            container.style.scale = "1.25"
-            break
-        case "1.25":
-            container.style.scale = "1"
-            break
+        // case "1.5":
+        //     container.style.scale = "1.25"
+        //     break
+        // case "1.25":
+        //     container.style.scale = "1"
+        //     break
     }
 }
